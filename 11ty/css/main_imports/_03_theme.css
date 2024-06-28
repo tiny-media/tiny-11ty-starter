@@ -1,0 +1,39 @@
+/* Light theme (default) */
+:root {
+    --primary: var(--azure-8);
+    --primary-light: var(--azure-6);
+    --primary-dark: var(--azure-10);
+    
+    --secondary: var(--seafoam-8);
+    --secondary-light: var(--seafoam-6);
+    --secondary-dark: var(--seafoam-10);
+    
+    --accent: var(--red-accent);
+    
+    --background: var(--gray-3);
+    --surface: var(--gray-4);
+    --text: var(--gray-15);
+    --text-light: var(--gray-11);
+  }
+  
+  /* Dark theme */
+ @media (prefers-color-scheme: dark) {
+    :root {
+      --primary: var(--azure-7);
+      --primary-light: var(--azure-5);
+      --primary-dark: var(--azure-9);
+      
+      --secondary: var(--seafoam-7);
+      --secondary-light: var(--seafoam-5);
+      --secondary-dark: var(--seafoam-9);
+      
+      --accent: var(--red-accent);
+      
+      --background: var(--gray-13);
+      --surface: var(--gray-12);
+      --text: var(--gray-1);
+      --text-light: var(--gray-4);
+    } 
+  }
+  
+  /* You can add more custom theme variables as needed */

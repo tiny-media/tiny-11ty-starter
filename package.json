@@ -1,0 +1,13 @@
+{
+  "name": "tiny-11ty-starter",
+  "version": "0.1",
+  "type": "module",
+  "devDependencies": {
+    "@11ty/eleventy": "canary",
+    "@11ty/eleventy-plugin-webc": "latest"
+  },
+  "scripts": {
+    "dev": "rm -rf _site && eleventy --serve",
+    "build": "rm -rf _site && eleventy"
+  }
+}

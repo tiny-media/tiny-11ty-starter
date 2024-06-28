@@ -1,0 +1,5 @@
+---node
+let layout = "base.webc"
+---
+
+<p>Guten Tag</p>

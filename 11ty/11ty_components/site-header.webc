@@ -1,0 +1,3 @@
+<header>
+    <a href="/" class="button-secondary"><strong @text="siteTitle"></strong></a>
+</header>

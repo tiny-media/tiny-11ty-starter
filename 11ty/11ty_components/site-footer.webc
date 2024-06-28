@@ -1,0 +1,3 @@
+<footer>
+    © <span webc:nokeep @text="(new Date()).getFullYear()"></span> - tiny 11ty Starter WebC
+</footer>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html :lang="metadata.language">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title @text="title || metadata.title"></title>
+		<meta name="description" :content="description || metadata.description">
+		<meta name="generator" :content="eleventy.generator">
+
+		<link rel="stylesheet" href="/css/main.css" webc:keep>
+
+		<style webc:keep @raw="getBundle('css')"></style>
+
+
+		<script webc:keep @raw="getBundle('js', 'head')"></script>
+
+
+	</head>
+	<body>
+
+		<site-header :site-title="metadata.title"></site-header>
+
+		<main @raw="content"></main>
+
+<site-footer>
+		</site-footer>
+
+		<script webc:type="js">`<!-- Build timestamp: ${Date.now()} -->`</script>
+
+		<script type="module" webc:keep :src="getBundleFileUrl('js')"></script>
+	</body>
+</html>
